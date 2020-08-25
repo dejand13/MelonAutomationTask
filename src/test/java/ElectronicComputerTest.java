@@ -1,13 +1,11 @@
 import PageObject.Selectors;
 import PageObject.WebDriverSetup;
-import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
-@Slf4j
 public class ElectronicComputerTest extends WebDriverSetup {
     public WebDriver driver;
     @Test
@@ -26,7 +24,6 @@ public class ElectronicComputerTest extends WebDriverSetup {
         try{
             boolean checkList = kategorien.getAssertListView().isDisplayed();
             Assert.assertEquals(checkList,true);
-//            log.info("Item has been displayed in list view.");
         } catch (Exception e) {
             throw new AssertionError("List view was not displayed");
         }
