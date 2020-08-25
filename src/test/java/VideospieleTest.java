@@ -25,7 +25,6 @@ public class VideospieleTest extends WebDriverSetup {
             Assert.assertEquals(checkList,true);
         } catch (Exception e) {
             throw new AssertionError("List view was not displayed");
-
         }
 
         Select ByValue = new Select(kategorien.getSortBy());

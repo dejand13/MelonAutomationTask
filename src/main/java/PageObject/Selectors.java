@@ -70,4 +70,9 @@ public class Selectors {
     public WebElement getMostExpensive() {
         return driver.findElement(mostExpensive);
     }
+
+    By computerDisplayed = By.xpath("//h1[@class='js-pr-productsList__title m-0 pt-2 pt-lg-0']");
+    public WebElement getComputerDisplayed() {
+        return driver.findElement(computerDisplayed);
+    }
 }

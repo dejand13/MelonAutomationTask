@@ -14,7 +14,6 @@ public class ElectronicComputerTest extends WebDriverSetup {
         driver.get(prop.getProperty("url"));
 
         Selectors kategorien = new Selectors(driver);
-
         kategorien.getCookies().click();
         kategorien.getKategorienDropDown().click();
         kategorien.getKategorienButton().click();

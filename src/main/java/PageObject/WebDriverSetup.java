@@ -12,7 +12,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class WebDriverSetup {
-    public WebDriver driver;
+    public static WebDriver driver;
     public Properties prop;
 
     public WebDriver initDriver() throws IOException {
@@ -36,7 +36,6 @@ public class WebDriverSetup {
             driver.manage().window().maximize();
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Selectors listItem = new Selectors(driver);
         return driver;
     }
 }
