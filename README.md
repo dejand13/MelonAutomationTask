@@ -1,6 +1,7 @@
 # MelonAutomationTask
 
 Selector
+
 All the selectors used in the assignment are placed under main PageObject package in Selectors class. I have used Page object model which make all the code more clear and more understandable
 
 Web Driver Setup 
