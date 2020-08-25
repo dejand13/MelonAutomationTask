@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/dejanadmin/MelonAutoAssignment">
+        <classes>
+            <class name="ElectronicComputerTest">
+                <methods>
+                    <include name="ElectronicComputerTest"/>
+                </methods>
+            </class>
+            <class name="BabyKinderzimmerTest">
+                <methods>
+                    <include name="BabyKinderzimmerTest"/>
+                </methods>
+            </class>
+            <class name="VideospieleTest">
+                <methods>
+                    <include name="VideospieleTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
